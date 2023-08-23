@@ -1,0 +1,33 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://prabaljain:prabal@cluster0.5ljoaz2.mongodb.net/
+      database: ks-ams-test
+  cloud:
+    azure:
+      active-directory: 
+        enabled: true
+        profile:
+          tenant-id: 281de859-c72a-4b58-8ef3-430d00dd5f43
+        credential:
+          client-id: bb97b431-920f-41e6-b1cc-66e6a33c8fd6
+          client-secret: ~Aj8Q~QMUqAkvcjFQ06yYNktpP-5qcD.qJLKPbXz
+server:
+  forward-headers-strategy: native
+
+#  security:
+#    oauth2:
+#      client:
+#        provider:
+#          azure:
+#            issue-uri: https://login.microsoftonline.com/281de859-c72a-4b58-8ef3-430d00dd5f43/v2.0
+#        registration:
+#          azure-dev:
+#            provider: azure
+#            client-id: bb97b431-920f-41e6-b1cc-66e6a33c8fd6
+#            client-secret: ~Aj8Q~QMUqAkvcjFQ06yYNktpP-5qcD.qJLKPbXz  
+#            scope:
+#            - openid
+#            - email
+#            - profile
+
