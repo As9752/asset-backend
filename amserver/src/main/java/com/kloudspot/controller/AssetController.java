@@ -33,7 +33,7 @@ import com.kloudspot.service.IAssetService;
  */
 
 @RestController
-@CrossOrigin(origins="*")
+@CrossOrigin(originPatterns="*")
 @RequestMapping("/api/v1/assets") // Base endpoint for all asset-related operations
 public class AssetController {
 
